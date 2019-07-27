@@ -41,6 +41,7 @@ private List<Tweet> tweets;
         viewHolder.tvBody.setText( tweet.body );
         viewHolder.tvScreenName.setText( tweet.user.screenName );
         Glide.with( context ).load( tweet.user.profileImageUrl ).into(viewHolder.ivProfileImage);
+        viewHolder.tvTime.setText( tweet.createdAt );
 
 
     }
@@ -68,6 +69,7 @@ private List<Tweet> tweets;
         public ImageView ivProfileImage;
         public TextView tvScreenName;
         public TextView tvBody;
+        public TextView tvTime;
 
         public ViewHolder(@NonNull View itemView) {
             super( itemView );
@@ -75,6 +77,7 @@ private List<Tweet> tweets;
             ivProfileImage = itemView.findViewById( R.id.ivProfileImage );
             tvScreenName = itemView.findViewById( R.id.tvScreenName );
             tvBody = itemView.findViewById( R.id.tvBody );
+            tvTime = itemView.findViewById( R.id.tvTime );
         }
     }
 

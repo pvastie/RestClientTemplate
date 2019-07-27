@@ -2,8 +2,9 @@
 <resources>
 
     <string name="app_name">SimpleTweet</string>
-    <string name="login_label">Log in</string>
+    <string name="login_label">CONNECT</string>
     <string name="intent_scheme">oauth</string>
     <string name="intent_host">cprest</string>
+    <string name="textview">Welcome to Twitter</string>
 
 </resources>
